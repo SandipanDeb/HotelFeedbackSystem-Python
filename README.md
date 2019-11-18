@@ -1,10 +1,10 @@
-# Guestbook
+# Online Hotel Feedback System
 
-Guestbook is an example application showing basic usage of Google App
-Engine. Users can read & write text messages and optionally log-in with
+The Online Hotel Feedback Application is designed to provide a mechanism where a hotel can collect feedback from guests who stayed in their properties. The hotel can then utilize the feedback to provide improved services to its customers. 
+
+Once the guest checks out from the hotel, they receive a link to the feedback portal in their emails requesting feedback on their stay. Users can read & write text messages and optionally log-in with
 their Google account. Messages are stored in App Engine (NoSQL)
-High Replication Datastore (HRD) and retrieved using a strongly consistent
-(ancestor) query.
+High Replication Datastore (HRD) and retrieved using a strongly consistent (ancestor) query.
 
 ## Products
 - [App Engine][1]
@@ -28,25 +28,3 @@ High Replication Datastore (HRD) and retrieved using a strongly consistent
 [5]: http://webapp-improved.appspot.com/
 [6]: http://jinja.pocoo.org/docs/
 [7]: http://twitter.github.com/bootstrap/
-
-
-## E2E Test for this sample app
-
-A Makefile is provided to deploy and run the e2e test.
-
-To run:
-
-     export GAE_PROJECT=your-project-id
-     make
-
-To manually run, install the requirements
-
-    pip install -r e2e/requirements-dev.txt
-
-Set the environment variable to point to your deployed app:
-
-    export GUESTBOOK_URL="http://guestbook-test-dot-useful-temple-118922.appspot.com/"
-
-Finally, run the test
-
-    python e2e/test_e2e.py
